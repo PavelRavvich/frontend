@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Проверка</title>
+	<meta http-equiv="Content-Type" charset="utf-8">
+
+</head>
+<body>
+	
+	<br />
+	<!--буквы снизу-->
+	<p>H<sub>2</sub>O</p>
+	
+	<!--буквы сверху-->
+	<p>H<sup>2</sup>O</p><br />
+	
+	<ruby>
+		
+		СИМВОЛ<rt>мелкое пояснение над текстом</rt>
+		
+	</ruby>
+	<br />
+	
+	
+	
+	<!--Выпадающее пояснение-->
+	<details>
+	
+		<summary>Кликабельный заголовок</summary> 
+		<p>Выпадающий текст </p>
+	
+	</details>
+	<br />
+	
+	<!--Прогресс загрузки-->
+	<progress max="100" value="79">
+		Прогресс: <span id="value">25</span> 
+	</progress>
+	<br />
+	
+	<!--Функции с мнгновенным подсчетом-->
+	<form oninput="result.value=(cm.value/2.54).toFixed(2)">
+		<p>Введите длинну в сентиметрах:<input type="number" name="cm" autofocus></p>
+		<p>длинна в дюймах: <output name="result">0</p>
+		
+	</form>
+	
+
+</body>
+</html>
