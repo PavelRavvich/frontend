@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ajax</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<script type="text/javascript">
+
+		function beafore() {
+			$("#information").text ("Ожидание данных...");
+		}
+
+		function funcSuccess() {
+			$("#information").text (data);
+		}
+
+		$(document).ready(function () {
+			// bind - обработчик, $("...") - обращение к id
+			$("load").bind("click", function () {
+				var username = "Vasya";
+				$.ajax ({
+					url: "content.php",
+					type: "POST",
+					data: ({name: username, number: 5}),
+					dataType: "html",
+					beforeSend: beafore,
+					success: funcSuccess
+				});
+			});
+		});
+
+		
+	</script>
+</head>
+<body>
+	
+	<p id="load" style="cursor: pointer">Загрузить данные</p>
+	<div id="information"></div>
+
+</body>
+</html>

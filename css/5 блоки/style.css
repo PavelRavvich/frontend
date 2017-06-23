@@ -1,0 +1,22 @@
+#test {
+	/* граница	solid-сплошная линия есть и другие double -  двойная; groove - вдавненная; redge - выпуклая; inset - весь блок вдавленный
+		outset - выпуклый блок  */
+	border:1px solid black;
+	/* высота	 */
+	height: 200px;
+	/* ширина	 */
+	width: 500px;
+	/* цвет фона */
+	background-color: #56ccda;
+	/* внешние отступы	 */
+	margin: 17px 24px 17px 38px;
+	/* отступы внутреннего текста	 */
+	padding:37px 17px 32px 14px;
+	/* закругления углов */
+	border-radius: 15px;
+}
+
+
+#i1 {
+	color: #fff8f8
+}
