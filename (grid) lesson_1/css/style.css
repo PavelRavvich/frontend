@@ -1,0 +1,33 @@
+html, body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+    width: 100%;
+}
+
+#navigation {
+    flex-basis: 220px;
+    background-color: #00649b;
+    flex-shrink: 0;
+}
+
+#content {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.head {
+    padding: 0 24px;
+    height: 60px;
+    background-color: #00649b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head.custom {
+    padding: 0 20px;
+    background-color: #ffffff;
+    justify-content: space-between;
+}
